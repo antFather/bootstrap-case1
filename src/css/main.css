@@ -1,0 +1,115 @@
+
+.index-banner{
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}
+.index-banner ul{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.index-banner ul li{
+    list-style: none;
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.index-banner ul li h3{
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+
+}
+.index-banner ul li .introduction{
+    color: #666;
+   display: none;
+   text-align: center;
+}
+.index-banner ul li i{
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 15px auto 0;
+}
+
+.banner-icon01 {
+    background:url(../img/baozhang-icon.jpg) 0 0 no-repeat;
+}
+
+.banner-icon02 {
+    background: url(../img/baozhang-icon.jpg) -38px 0 no-repeat;
+}
+
+.banner-icon03 {
+    background: url(../img/baozhang-icon.jpg) -76px 0 no-repeat;
+}
+
+.banner-icon04 {
+    background: url(../img/baozhang-icon.jpg) -114px 0 no-repeat;
+}
+
+.banner-icon05 {
+    background: url(../img/baozhang-icon.jpg) -152px 0 no-repeat;
+}
+.banner-icon01:hover{
+    background:url(../img/baozhang-icon2.jpg) 0 0 no-repeat;
+}
+.banner-icon02:hover {
+    background: url(../img/baozhang-icon2.jpg) -38px 0 no-repeat;
+}
+.banner-icon03:hover {
+    background: url(../img/baozhang-icon2.jpg) -76px 0 no-repeat;
+}
+.banner-icon04:hover {
+    background: url(../img/baozhang-icon2.jpg) -114px 0 no-repeat;
+}
+.banner-icon05:hover {
+    background: url(../img/baozhang-icon2.jpg) -152px 0 no-repeat;
+}
+
+
+
+@media (min-width:480px) {}
+@media (min-width:768px) {}
+@media (min-width:992px) {
+    .index-banner ul li{
+        padding-top: 15px;
+    }
+    .index-banner ul li .introduction {
+        display: block;
+        font-size: 12px;
+    }
+    .index-banner ul li h3 {
+        font-size: 14px;
+        
+}
+.index-banner {
+    height: 162px;
+}
+}
+@media (min-width:1200px) {}
+@media (min-width:1400px) {
+    .index-banner ul li {
+        padding-top: 15px;
+    }
+     .index-banner {
+        height: 162px;
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 20;
+        top: -81px;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2)
+    }
+        .index-banner ul li .introduction {
+            display: block;
+            font-size: 12px;
+        }
+
+        .index-banner ul li h3 {
+            font-size: 14px;
+        }
+}
+@media (min-width:1600px) {}

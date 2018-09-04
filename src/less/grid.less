@@ -1,0 +1,120 @@
+//
+// Grid system   栅格系统
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;                               //小屏768px
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;                               //中屏992px
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;                               //大屏1200px
+  }
+
+  //custom
+  @media (min-width: @screen-xl-min) {
+    width: 1400px;                               //1400px
+  }
+  @media (min-width: @screen-xx-min) {
+    width:1600px;                               //1600px
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .container-fixed();
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
+}
+
+.make-row(@name,@value){
+  .@{name}-@{value}{
+    .make-row(@value * 1px)
+  }
+}
+.make-row(line,8);
+.make-row(line,12);
+.make-row(line,16);
+.make-row(line,18);
+.make-row(line,20);
+.make-row(line,24);
+.make-row(line,36);
+.make-row(line,40);
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+.make-custom-grid-columns(line,12);
+.make-custom-grid-columns(line,20);
+.make-custom-grid-columns(line,18);
+.make-custom-grid-columns(line,24);
+.make-custom-grid-columns(line,30);
+.make-custom-grid-columns(line,16);
+.make-custom-grid-columns(line,36);
+.make-custom-grid-columns(line,32);
+.make-custom-grid-columns(line,40);
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+@media (min-width: @screen-xl-min) {
+  .make-grid(xl);
+}
+
+@media (min-width: @screen-xx-min) {
+  .make-grid(xx);
+}
