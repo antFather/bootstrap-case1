@@ -1,6 +1,7 @@
-.navbar-nav li a{
+.navbar-nav li a {
     position: relative;
 }
+
 .navbar-nav li a::after {
     content: '';
     position: absolute;
@@ -9,28 +10,111 @@
     bottom: 0px;
     left: 17px;
     right: 17px;
-    display:none;
+    display: none;
 }
-.navbar-nav li a:hover::after{
+
+.navbar-nav li a:hover::after {
     content: '';
     display: block;
 }
 
 /* banner */
-.carousel-caption{
-    height:70px; 
+.carousel-caption {
+    height: 70px;
 }
-.carousel-inner .carousel-caption div{
-    
+
+.carousel-inner .carousel-caption div {
     font-size: 18px;
     line-height: 1;
 }
-.carousel-inner .carousel-caption h2{
+
+.carousel-inner .carousel-caption h2 {
     margin-top: 10px;
     font-size: 14px;
     line-height: 1;
 }
-.carousel-indicators{display: none;}
+
+.carousel-indicators {
+    display: none;
+}
+
+/* 板块标题 start*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::selection {
+    color: #eee;
+    background: rgb(1, 132, 255);
+}
+
+.cCommon-title {
+    margin-top: 20px;
+    width: 100%;
+    line-height: 18px;
+}
+
+.cCommon-title .ZH-title {
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.cCommon-title .EN-title {
+    line-height: 1;
+    text-align: center;
+    margin: 5px auto 0;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.cCommon-title .nav {
+    display: flex;
+    margin-top: 15px;
+    line-height: 18px;
+    /* margin-left: 17%; */
+}
+
+.cCommon-title .nav a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    flex: 1;
+    line-height: 1;
+    position: relative;
+}
+
+.cCommon-title .nav a::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+    width: 1px;
+    height: 8px;
+}
+
+.cCommon-title .nav a:first-child::before {
+    display: none;
+}
+
+.cCommon-title .nav a:hover {
+    color: #000;
+}
 
 @media (min-width:480px) {
     .carousel-caption {
@@ -46,7 +130,7 @@
     }
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
     .carousel-caption {
         height: 100px;
     }
@@ -58,77 +142,165 @@
     .carousel-inner .carousel-caption h2 {
         font-size: 24px;
     }
+
+    .cCommon-title {
+        margin-top: 20px;
+    }
+
+    .cCommon-title .container {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .cCommon-title .ZH-title {
+        float: left;
+    }
+
+    .cCommon-title .EN-title {
+        float: left;
+        margin-left: 3px;
+        line-height: -5px;
+    }
+
+    .cCommon-title .nav {
+        line-height: 18px;
+        margin-top: 0;
+    }
+
+    .cCommon-title .nav a {
+        line-height: 18px;
+    }
+
+    .cCommon-title .nav a::before {
+        top: 5px;
+    }
 }
+
 @media (min-width:992px) {
-      .carousel-caption {
-          height: 120px;
-      }
+    .carousel-caption {
+        height: 120px;
+    }
 
-      .carousel-inner .carousel-caption div {
-          font-size: 48px;
-      }
+    .carousel-inner .carousel-caption div {
+        font-size: 48px;
+    }
 
-      .carousel-inner .carousel-caption h2 {
-          font-size: 30px;
-      }
-      .carousel-indicators {
-          display: block;
-      }
+    .carousel-inner .carousel-caption h2 {
+        font-size: 30px;
+    }
 
+    .carousel-indicators {
+        display: block;
+    }
+
+    .cCommon-title .ZH-title {
+        margin-left: 30px;
+    }
 }
+
 @media (min-width:1200px) {
-      .carousel-caption {
-          height: 140px;
-      }
+    .carousel-caption {
+        height: 140px;
+    }
 
-      .carousel-inner .carousel-caption div {
-          font-size: 42px;
-      }
+    .carousel-inner .carousel-caption div {
+        font-size: 42px;
+    }
 
-      .carousel-inner .carousel-caption h2 {
-          font-size: 30px;
-          margin-top: 20px;
-      }
-      .carousel-indicators {
-          display: block;
-      }
+    .carousel-inner .carousel-caption h2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
 
+    .carousel-indicators {
+        display: block;
+    }
+
+    .cCommon-title {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .cCommon-title .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .cCommon-title .ZH-title {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .cCommon-title .EN-title {
+        font-size: 14px;
+    }
+
+    .cCommon-title .nav {
+        margin-left: 17%;
+    }
+
+    .cCommon-title .nav a {
+        font-size: 14px;
+    }
 }
+
 @media (min-width:1400px) {
-      .carousel-caption {
-          height: 160px;
-      }
+    .carousel-caption {
+        height: 160px;
+    }
 
-      .carousel-inner .carousel-caption div {
-          font-size: 50px;
-      }
+    .carousel-inner .carousel-caption div {
+        font-size: 50px;
+    }
 
-      .carousel-inner .carousel-caption h2 {
-          font-size: 30px;
-          margin-top: 20px;
-      }
-      .carousel-indicators {
-          display: block;
-      }
+    .carousel-inner .carousel-caption h2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
 
+    .carousel-indicators {
+        display: block;
+    }
 
+    .cCommon-title {
+        width: 1200px;
+        margin: 27px auto 0;
+    }
+
+    .cCommon-title .container {
+        width: 1200px;
+    }
+
+    .cCommon-title .ZH-title {
+        font-size: 22px;
+    }
+
+    .cCommon-title .EN-title {
+        font-size: 16px;
+    }
 }
+
 @media (min-width:1600px) {
-      .carousel-caption {
-          height: 180px;
-      }
+    .carousel-caption {
+        height: 180px;
+    }
 
-      .carousel-inner .carousel-caption div {
-          font-size: 64px;
-      }
+    .carousel-inner .carousel-caption div {
+        font-size: 64px;
+    }
 
-      .carousel-inner .carousel-caption h2 {
-          font-size: 30px;
-          margin-top: 20px;
-      }
-      .carousel-indicators {
-          display:block;
-      }
+    .carousel-inner .carousel-caption h2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
 
+    .carousel-indicators {
+        display: block;
+    }
 
+    .cCommon-title .container {
+        width: 1200px;
+    }
 }

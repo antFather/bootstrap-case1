@@ -1,33 +1,37 @@
-
-.index-banner{
+.index-banner {
     height: 100px;
     width: 100%;
     background-color: #fff;
 }
-.index-banner ul{
+
+.index-banner ul {
     width: 100%;
     height: 100%;
     display: block;
 }
-.index-banner ul li{
+
+.index-banner ul li {
     list-style: none;
     width: 20%;
     height: 100%;
     float: left;
     text-align: center;
 }
-.index-banner ul li h3{
+
+.index-banner ul li h3 {
     font-size: 12px;
     color: #333;
     font-weight: bold;
 
 }
-.index-banner ul li .introduction{
+
+.index-banner ul li .introduction {
     color: #666;
-   display: none;
-   text-align: center;
+    display: none;
+    text-align: center;
 }
-.index-banner ul li i{
+
+.index-banner ul li i {
     display: block;
     width: 38px;
     height: 38px;
@@ -35,7 +39,7 @@
 }
 
 .banner-icon01 {
-    background:url(../img/baozhang-icon.jpg) 0 0 no-repeat;
+    background: url(../img/baozhang-icon.jpg) 0 0 no-repeat;
 }
 
 .banner-icon02 {
@@ -53,48 +57,284 @@
 .banner-icon05 {
     background: url(../img/baozhang-icon.jpg) -152px 0 no-repeat;
 }
-.banner-icon01:hover{
-    background:url(../img/baozhang-icon2.jpg) 0 0 no-repeat;
+
+.banner-icon01:hover {
+    background: url(../img/baozhang-icon2.jpg) 0 0 no-repeat;
 }
+
 .banner-icon02:hover {
     background: url(../img/baozhang-icon2.jpg) -38px 0 no-repeat;
 }
+
 .banner-icon03:hover {
     background: url(../img/baozhang-icon2.jpg) -76px 0 no-repeat;
 }
+
 .banner-icon04:hover {
     background: url(../img/baozhang-icon2.jpg) -114px 0 no-repeat;
 }
+
 .banner-icon05:hover {
     background: url(../img/baozhang-icon2.jpg) -152px 0 no-repeat;
 }
 
+/* 项目案例 start */
+.item-project {
+    margin-top: 35px;
+    width: 100%;
+    margin-bottom: 35px;
+}
 
+.item-project .line-16>a {
+    position: relative;
+    text-decoration: none;
+}
+
+.item-project .item-imgbox {
+    width: 100%;
+    position: relative;
+}
+
+.item-project .item-img img {
+    width: 100%;
+}
+
+.item-project .item-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(0.875);
+    -webkit-transform: scale(0.875);
+    -moz-transform: scale(0.875);
+    -ms-transform: scale(0.875);
+    -o-transform: scale(0.875);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.item-project .left-top {
+    width: 23px;
+    height: 18px;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: -7px;
+    left: -11px;
+}
+
+.item-project .left-bottom {
+    width: 23px;
+    height: 18px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    bottom: -7px;
+    left: -11px;
+}
+
+.item-project .right-top {
+    width: 23px;
+    height: 18px;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: -7px;
+    right: -11px;
+}
+
+.item-project .right-bottom {
+    width: 23px;
+    height: 18px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    right: -7px;
+    bottom: -11px;
+}
+
+.item-project .item-title {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+}
+
+.item-project .item-title h5 {
+    font-size: 12px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.item-project .item-title h6 {
+    font-size: 10px;
+    line-height: 1;
+    margin: 8px 0 0 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.item-project .induction {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.8;
+    margin-top: 14px;
+}
+
+.item-project .button {
+    font-size: 40px;
+    color: #fff;
+    background: #464646;
+    text-align: center;
+    line-height: 39px;
+    width: 154px;
+    display: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: none;
+    position: absolute;
+
+}
+
+.item-project a:hover {
+    text-decoration: none;
+}
+
+.item-project a:hover .item-bg {
+    display: block;
+}
+
+/* 专长领域 specialty */
+.item-specialty {
+    margin-top: 35px;
+}
+
+.item-specialty a {
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.item-specialty a:hover {
+    text-decoration: none;
+}
+
+.item-specialty-imgbox {
+    position: relative;
+}
+
+.item-specialty-imgbox .button {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 34px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+}
+
+.item-specialty-title {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    line-height: 64px;
+    margin: 0;
+
+}
+
+.item-specialty-introduction {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 24px;
+    margin: 0;
+}
+
+.item-specialty-icon {
+    height: 40px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.item-specialty-icon a {
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin: 15px 5px;
+}
 
 @media (min-width:480px) {}
-@media (min-width:768px) {}
+
+@media (min-width:768px) {
+    .item-project .item-title {
+        bottom: 12px;
+    }
+
+    .item-project .item-title h5 {
+        font-size: 14px;
+    }
+
+    .item-project .item-title h6 {
+        font-size: 12px;
+    }
+}
+
 @media (min-width:992px) {
-    .index-banner ul li{
+    .index-banner ul li {
         padding-top: 15px;
     }
+
     .index-banner ul li .introduction {
         display: block;
         font-size: 12px;
     }
+
     .index-banner ul li h3 {
         font-size: 14px;
-        
+
+    }
+
+    .index-banner {
+        height: 162px;
+    }
+
+    .item-project a:hover .button {
+        display: block;
+        position: absolute;
+    }
+
+
 }
-.index-banner {
-    height: 162px;
+
+@media (min-width:1200px) {
+    .item-specialty .row {
+        width: 1200px;
+        margin: 20px auto;
+    }
+
 }
-}
-@media (min-width:1200px) {}
+
 @media (min-width:1400px) {
     .index-banner ul li {
         padding-top: 15px;
     }
-     .index-banner {
+
+    .index-banner {
         height: 162px;
         width: 1200px;
         margin: 0 auto;
@@ -103,13 +343,84 @@
         top: -81px;
         box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2)
     }
-        .index-banner ul li .introduction {
-            display: block;
-            font-size: 12px;
-        }
 
-        .index-banner ul li h3 {
-            font-size: 14px;
-        }
+    .index-banner ul li .introduction {
+        display: block;
+        font-size: 12px;
+    }
+
+    .index-banner ul li h3 {
+        font-size: 14px;
+    }
+
+    .item-project {
+        margin-top: 74px;
+        margin-bottom: 190px;
+    }
+
+    .item-project p.induction {
+        font-size: 14px;
+    }
+
+    .item-project.item-title {
+        bottom: 16px;
+    }
+
+    .item-project .item-title h5 {
+        font-size: 16px;
+    }
+
+    .item-project .item-title h6 {
+        font-size: 14px;
+    }
+
+    .item-specialty {
+        margin-bottom: 116px;
+    }
+
+    .item-specialty .container {
+        width: 1200px;
+        margin: 20px auto;
+    }
+
+    .item-specialty .specialty-flex {
+        display: flex;
+    }
+
+    .row {
+        flex: 1;
+    }
+
+    .item-specialty .item-specialty-icon {
+        width: 40px;
+        margin: auto 0;
+    }
+
+    .item-specialty .item-specialty-icon a {
+        margin: 5px 0 5px 5px;
+    }
+
+    .item-specialty-title {
+        font-size: 16px;
+    }
+
+    .item-specialty-introduction {
+        font-size: 14px;
+    }
+
+    .item-specialty a:nth-child(even) h5 {
+        line-height: 52px;
+    }
+
+    .item-specialty a:nth-child(even) p {
+        margin-bottom: 12px;
+    }
 }
-@media (min-width:1600px) {}
+
+@media (min-width:1600px) {
+    .item-specialty .container {
+        width: 1200px;
+        margin: 20px auto;
+    }
+
+}
