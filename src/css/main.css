@@ -80,11 +80,12 @@
 
 /* 项目案例 start */
 .item-project {
-    margin-top: 35px;
+    margin-top: 50px;
     width: 100%;
-    margin-bottom: 35px;
 }
-
+.item-project .cCommon-title .nav{
+    margin-bottom: 30px;
+}
 .item-project .line-16>a {
     position: relative;
     text-decoration: none;
@@ -210,7 +211,11 @@
 
 /* 专长领域 specialty */
 .item-specialty {
-    margin-top: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.item-specialty .cCommon-title{
+    margin-bottom: 50px;
 }
 
 .item-specialty a {
@@ -278,7 +283,305 @@
     margin: 15px 5px;
 }
 
-@media (min-width:480px) {}
+/* 解决方案 */
+.plan{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+.plan-house {
+    position: relative;
+}
+
+.plan-house .plan-text {
+    width: 100%;
+    position: absolute;
+    bottom: 8%;
+}
+
+.plan-text {
+    padding: 0 5%;
+    margin-left: 15px;
+}
+
+.plan h3 {
+    margin-bottom: 20px;
+}
+
+.plan-house hr {
+    color: rgba(0, 0, 0, 0.3);
+    width: 70px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.plan-right hr {
+    width: 45px;
+    margin: 0 0 0 -40px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.plan-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.plan-introduction {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* 品牌介绍 */
+.index-brand{
+    margin: 50px 0 0 0;
+    width: 100%;
+    position: relative;
+    background: #efefef;
+}
+.index-brand .container-fluid{
+    padding:0;
+
+}
+.brand-bg{
+    width:100%;
+    background-color: #efefef;
+}
+.brand-bg img{
+    width: 100%;
+}
+.index-brand .brand-box{
+    position: absolute;
+    bottom: 15%;
+    right: 2%;
+    left: 2%;
+    top: 15%;
+    margin: auto;
+    background: #fff;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.brand-box-bg{
+    height:100%;
+    background-color: #fff;
+    float: left;
+    margin-right:10px;
+}
+.brand-box-bg img{
+    height: 100%;
+  
+
+}
+.index-brand .brand-text{
+       float: left;
+       width: 49%;
+       height: 100%;
+       overflow: hidden;
+}
+.index-brand h2{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+}
+.index-brand h5{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.2);
+}
+.index-brand p{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+.index-brand button{
+    width: 60px;
+    height: 20px;
+    line-height: 16px;
+    font-size: 10px;
+    text-align: center;
+    white-space: pre;
+    border: 1px solid #f5b834;
+    color: #f5b834;
+    background-color: #fff;
+}
+
+/* 专业团队 */
+.index-team .cCommon-title{
+    margin-bottom: 50px;
+}
+.designer-tro{
+    position: relative;
+    margin-bottom: 10px;
+}
+.index-team{
+    margin-top: 50px;
+}
+.index-team .imgbox{
+    float: left;
+    width: 40%;
+}
+.index-team .imgbox img {
+    width: 100%;
+}
+.index-team .tro-box{
+    position: absolute;
+    top: 8%;
+    bottom: 8%;
+    left: 30%;
+    right: 3%;
+    margin: auto;
+    background: rgba(232, 232, 232, 0.6);
+}
+.index-team .tro-text{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+
+}
+.index-team .tro-text h1{
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    line-height: 2;
+}
+.index-team .tro-text h5{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+ 
+}
+.index-team .tro-text p{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    line-height: 1.5;
+}
+.index-team .button {
+    display: none;
+}
+
+.designer-card{
+    height: 118px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.designer-card .img-tx{
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+.designer-card img{
+    margin:29px 0 0 29px;
+}
+
+.designer-card .text{
+    float: left;
+    width: 33%;
+    height: 60px;
+    margin-top: 20px;
+}
+.designer-card .text h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.designer-card .text h5{
+    font-size: 14px;
+}
+.designer-card .num {
+    float: left;
+    width: 33%;
+    height: 72px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/* index news */
+.index-news a:hover {
+    text-decoration: none;
+}
+
+.index-news{
+    margin-top: 50px;
+}
+.index-news .cCommon-title{
+    margin-bottom: 35px;
+}
+.newsBox{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.index-news .newsCard {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.index-news .newsCard:last-child {
+    border-bottom: none;
+}
+.index-news .item-news{
+    padding: 20px 10px;
+}
+.index-news h1{
+    font-size: 14px;
+    line-height: 2;
+    color: #000;
+    font-weight: bold;
+}
+.index-news p{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.index-news .item-news .month{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+.index-news .item-news .years {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+.index-news .button{
+    display: block;
+    visibility: hidden;
+}
+
+/* 合作伙伴 */
+.index-partner{
+    margin-top: 50px;
+    background: #e6e6e6;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.partner-left >div{
+    width: 25%;
+    float: left;
+    height: 100px;
+    padding:15px;
+    box-sizing: border-box;
+
+}
+.partner-left>div img{
+    height: 100%;
+}
+.leftIcon,.rightIcon{
+    display: none;
+}
+
+@media (min-width:480px) {
+    .index-brand p {
+        font-size: 12px;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+    .index-brand h2{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .index-brand h5{
+        font-size: 12px;
+    }
+}
 
 @media (min-width:768px) {
     .item-project .item-title {
@@ -292,6 +595,165 @@
     .item-project .item-title h6 {
         font-size: 12px;
     }
+
+    .plan-house .plan-text {
+        width: 70%;
+        position: absolute;
+        bottom: 25%;
+    }
+
+    .plan-right {
+        margin-top: -145px;
+    }
+
+    .plan-light,
+    .plan-worker {
+        position: relative;
+    }
+
+    .plan-light .plan-text {
+        position: absolute;
+        bottom: 40%;
+        width: 50%;
+    }
+
+    .plan-light hr {
+        width: 60px;
+        margin-left: -50px;
+    }
+
+    .plan-worker .plan-text {
+        position: absolute;
+        right: 0;
+        bottom: 35%;
+        width: 50%;
+    }
+    .index-brand .brand-text{
+        margin-left: 10px;
+    }
+    .index-brand h2{
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    .index-brand{
+        margin-bottom: 50px;
+    }
+    .index-brand h5 {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .index-brand  p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 2.4;
+    }
+
+    .index-team .designer-tro .imgbox {
+        width: 287px;
+        height: 358px;
+        color: #000;
+    }
+     .index-team .designer-tro .tro-box{
+         width: 629px;
+         height: 296px;
+         left: 20%;
+         right: 10%;
+     }
+     .index-team .tro-box .tro-text{
+         padding-top: 52px;
+         padding-left: 57px;
+     }
+     .index-team  .tro-text h1{
+         font-size: 16px;
+         font-weight: bold;
+         line-height: 1;
+         margin-bottom: 16px;
+         color: #000;
+     }
+      .index-team .tro-text h5 {
+          font-size: 14px;
+          line-height: 1;
+          margin-bottom: 34px;
+      }
+           .index-team .tro-text p {
+               font-size: 14px;
+               line-height: 38px;
+           }
+
+.index-team .designer-card .img-tx img{
+    margin-left: 15px;
+}
+.index-team .designer-card .text {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.index-news .item-news{
+    padding: 20px;
+}
+.index-news p{
+    font-size: 10px;
+}
+.index-news h1{
+    font-size: 12px;
+    font-weight: normal;
+}
+.index-news .newsCard {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+}
+.index-news .newsCard:first-child {
+    border-left: none;
+}
+.index-news .newsCard:hover a {
+    visibility:visible;
+}
+.index-news .button{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+    margin: 50px auto 0;
+    background:#464646;
+
+}
+
+.partner-left>div{
+    padding: 0 10px;
+    text-align: center;
+    line-height: 100px;
+}
+.partner-left>div img{
+    height: 75%;
+}
+.index-partner .container{
+    position: relative;
+}
+.index-partner .leftIcon{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 43px;
+    width: 12px;
+    height: 13px;
+}
+.index-partner .rightIcon {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 12px;
+    height: 13px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+
 }
 
 @media (min-width:992px) {
@@ -318,14 +780,209 @@
         position: absolute;
     }
 
+    .plan-right {
+        margin-top: 0px;
+    }
+
+    .plan-house .plan-text {
+        width: 85%;
+        position: absolute;
+        bottom: 10%;
+    }
+    .index-brand .brand-box {
+        width: 873px;
+        height: 348px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .index-brand .brand-box-bg img{
+        width: 100%;
+    }
+    .index-brand .brand-text{
+        margin-left: 54px;
+    }
+    .index-brand .brand-text h2{
+        line-height: 1;
+        margin-top: 52px;
+        margin-bottom: 0;
+        font-size: 26px;
+    }
+    .index-brand .brand-text h5{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+    }
+    .index-brand .brand-text p {
+        line-height: 34px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .index-brand button{
+        width: 106px;
+        height: 34px;
+        box-sizing: border-box;
+        border: 1px solid #f5b834;
+        line-height: 32px;
+        font-size: 14px;
+        color: #f5b834;
+    }
 
 }
 
 @media (min-width:1200px) {
+    .index-banner{
+        margin-bottom: 85px;
+    }
+    .item-project .cCommon-title {
+    margin-bottom: 74px;
+    }
+    .item-specialty{
+        margin-top: 65px;
+        margin-bottom: 135px;
+    }
     .item-specialty .row {
         width: 1200px;
         margin: 20px auto;
     }
+   .index-team .cCommon-title {
+       margin-bottom: 147px;
+   }
+    .plan{
+             margin-top: 77px;
+    }
+    .plan h3 {
+        font-size: 16px;
+   
+    }
+
+    .plan p {
+        font-size: 12px;
+    }
+
+    .plan-house hr {
+        bottom: 32px;
+    }
+
+    .plan-house .plan-text {
+        width: 85%;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .plan-light .plan-text {
+        width: 45%;
+        bottom: 30%;
+    }
+
+    .plan-worker .plan-text {
+        width: 45%;
+        bottom: 25%;
+    }
+    .index-brand{
+        margin-top: 135px;
+        margin-bottom: 129px;
+    }
+       .index-brand .brand-bg {
+           width: 50%;
+       }
+    .index-brand .brand-box{
+        width: 1122px;
+        height: 348px;
+        background: none;
+        box-shadow: none;
+    }
+    .index-brand .brand-box-bg {
+            height: 348px;
+            width: 332px;
+            margin-left: 229px;
+            margin-right: 0;
+    }
+     .index-brand .brand-box-bg img{
+         height: 348px;
+         width: 332px;
+     }
+    .index-brand .brand-text
+            {
+            width: 561px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 71px;
+            padding-left: 54px;
+            background: #fff;
+              box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        }
+    .index-team .team-box{
+        width: 1200px;
+        margin: 0 auto;
+    }
+       .index-team .button{
+           display: block;
+           width: 28px;
+           height: 35px;
+           background: rgba(0, 0, 0, 0.2);
+           font-size: 26px;
+           color: #fff;
+           line-height: 35px;
+           text-align: center;
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           right: 0;
+           margin: auto;
+       }
+.index-news{
+    margin-top: 163px;
+    margin-bottom: 0;
+}
+       .index-news .newsBox .container{
+           width: 1200px;
+           margin: 0 auto;
+       }
+       .index-news .item-news{
+            padding: 40px;
+       }
+       .index-news h1{
+           font-size: 18px;
+           color: #000;
+           line-height: 1px;
+           margin-top: 71px;
+       }
+       .index-news p{
+           line-height: 28px;
+           font-size: 14px;
+           margin-top: 31px;
+           margin-bottom: 33px;
+       }
+       .index-news .month{
+           font-size: 24px;
+           font-weight: normal;
+           line-height: 1;
+       }
+       .index-news .years{
+           font-size: 12px;
+           margin-left: 12px;
+           font-weight: normal;
+       }
+       .index-news .button{
+           font-size: 30px;
+           width: 154px;
+           height: 39px;
+           line-height: 39px;
+           margin-top: 106px;
+       }
+
+.index-partner {
+    margin-top: 74px;
+    margin-bottom: 90px;
+}
+
+        .partner-left>div img {
+            height: 100%;
+        }
 
 }
 
@@ -337,7 +994,7 @@
     .index-banner {
         height: 162px;
         width: 1200px;
-        margin: 0 auto;
+        margin: 0 auto 48px;
         position: relative;
         z-index: 20;
         top: -81px;
@@ -378,7 +1035,7 @@
         margin-bottom: 116px;
     }
 
-    .item-specialty .container {
+    .item-specialty >.container {
         width: 1200px;
         margin: 20px auto;
     }
@@ -387,7 +1044,7 @@
         display: flex;
     }
 
-    .row {
+    .item-specialty .specialty-flex >.row {
         flex: 1;
     }
 
@@ -415,12 +1072,22 @@
     .item-specialty a:nth-child(even) p {
         margin-bottom: 12px;
     }
+
+    .plan h3 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .index-partner .container{
+        width: 1328px;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width:1600px) {
-    .item-specialty .container {
+    .item-specialty >.container {
         width: 1200px;
         margin: 20px auto;
     }
-
 }
